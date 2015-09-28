@@ -12,6 +12,12 @@
     <br />
         <asp:Button runat="server" ID="btnLogout" OnClick="btnLogout_Click" Text="Logout" /><br /><br />
         <asp:Button runat="server" ID="btnSearch" OnClick="btnSearch_Click" Text="Search" /><br /><br />
+        
+        <asp:Button runat="server" ID="btnObAgent" OnClick="btnObAgent_Click" Text="AgentObject" /><br /><br />
+        <asp:Button runat="server" ID="btnObjProperty" OnClick="btnObjProperty_Click" Text="PropertyObject" /><br /><br />
+        <asp:Button runat="server" ID="btnObjOffice" OnClick="btnObjOffice_Click" Text="OfficeObject" /><br /><br />
+
+       
     </div>
     </form>
 </body>

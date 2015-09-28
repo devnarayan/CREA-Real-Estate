@@ -29,6 +29,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -88,9 +89,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CREA Data Distribution Code Sample CSharp\CSharp.csproj">
-      <Project>{ea13a382-16ad-4d60-ae26-82e00143f198}</Project>
-      <Name>CSharp</Name>
+    <ProjectReference Include="..\CREA.Access\CREA.Access.csproj">
+      <Project>{34818849-187f-4654-a893-d68b003ce4cf}</Project>
+      <Name>CREA.Access</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

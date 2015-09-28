@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CREADBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="CREADBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Agents" EntityType="CREADBModel.Agent" />
+    <EntitySet Name="Buildings" EntityType="CREADBModel.Building" />
+    <EntitySet Name="Lands" EntityType="CREADBModel.Land" />
+    <EntitySet Name="Offices" EntityType="CREADBModel.Office" />
+    <EntitySet Name="Photos" EntityType="CREADBModel.Photo" />
+    <EntitySet Name="Properties" EntityType="CREADBModel.Property" />
+    <EntitySet Name="PropertyAgents" EntityType="CREADBModel.PropertyAgent" />
+    <AssociationSet Name="FK_Agent_Office" Association="CREADBModel.FK_Agent_Office">
+      <End Role="Office" EntitySet="Offices" />
+      <End Role="Agent" EntitySet="Agents" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PropertyAgent_Agent" Association="CREADBModel.FK_PropertyAgent_Agent">
+      <End Role="Agent" EntitySet="Agents" />
+      <End Role="PropertyAgent" EntitySet="PropertyAgents" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Property_Building" Association="CREADBModel.FK_Property_Building">
+      <End Role="Building" EntitySet="Buildings" />
+      <End Role="Property" EntitySet="Properties" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Property_Land" Association="CREADBModel.FK_Property_Land">
+      <End Role="Land" EntitySet="Lands" />
+      <End Role="Property" EntitySet="Properties" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Photo_Property" Association="CREADBModel.FK_Photo_Property">
+      <End Role="Property" EntitySet="Properties" />
+      <End Role="Photo" EntitySet="Photos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PropertyAgent_PropertyAgent" Association="CREADBModel.FK_PropertyAgent_PropertyAgent">
+      <End Role="Property" EntitySet="Properties" />
+      <End Role="PropertyAgent" EntitySet="PropertyAgents" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Agent">
+    <Key>
+      <PropertyRef Name="AgentID" />
+    </Key>
+    <Property Name="AgentID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AgentDetailsID" Type="Int32" />
+    <Property Name="Name" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="OfficeID" Type="Int32" />
+    <Property Name="Position" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Office" Relationship="CREADBModel.FK_Agent_Office" FromRole="Agent" ToRole="Office" />
+    <NavigationProperty Name="PropertyAgents" Relationship="CREADBModel.FK_PropertyAgent_Agent" FromRole="Agent" ToRole="PropertyAgent" />
+  </EntityType>
+  <EntityType Name="Building">
+    <Key>
+      <PropertyRef Name="BuildingID" />
+    </Key>
+    <Property Name="BuildingID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="BathroomTotal" Type="Int32" />
+    <Property Name="BedroomsTotal" Type="Int32" />
+    <Property Name="CoolingType" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="FireplacePresent" Type="Boolean" />
+    <Property Name="HeatingFuel" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="HeatingType" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="SizeInterior" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Type" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Properties" Relationship="CREADBModel.FK_Property_Building" FromRole="Building" ToRole="Property" />
+  </EntityType>
+  <EntityType Name="Land">
+    <Key>
+      <PropertyRef Name="LandID" />
+    </Key>
+    <Property Name="LandID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SizeTotal" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="SizeTotalText" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Acreage" Type="Boolean" />
+    <NavigationProperty Name="Properties" Relationship="CREADBModel.FK_Property_Land" FromRole="Land" ToRole="Property" />
+  </EntityType>
+  <EntityType Name="Office">
+    <Key>
+      <PropertyRef Name="OfficeID" />
+    </Key>
+    <Property Name="OfficeID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="City" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Agents" Relationship="CREADBModel.FK_Agent_Office" FromRole="Office" ToRole="Agent" />
+  </EntityType>
+  <EntityType Name="Photo">
+    <Key>
+      <PropertyRef Name="PhotoID" />
+    </Key>
+    <Property Name="PhotoID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PropertyID" Type="Int32" />
+    <Property Name="SequenceID" Type="Int32" />
+    <Property Name="LastUpdated" Type="DateTime" Precision="3" />
+    <Property Name="Url" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Property" Relationship="CREADBModel.FK_Photo_Property" FromRole="Photo" ToRole="Property" />
+  </EntityType>
+  <EntityType Name="Property">
+    <Key>
+      <PropertyRef Name="PropertyID" />
+    </Key>
+    <Property Name="PropertyID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PropertyDetailsID" Type="Int32" />
+    <Property Name="ListingID" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="Board" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Business" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="BuildingID" Type="Int32" />
+    <Property Name="LandID" Type="Int32" />
+    <Property Name="StreatAddress" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="AddressLine1" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="City" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Province" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PostalCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Country" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Features" Type="String" MaxLength="400" FixedLength="false" Unicode="true" />
+    <Property Name="FarmType" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="OwnershipType" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="Price" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="PropertyType" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PublicRemarks" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="TransactionType" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="UtilitiesAvailable" Type="String" MaxLength="400" FixedLength="false" Unicode="true" />
+    <Property Name="ViewType" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="WaterFrontType" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="AnalyticsClick" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="AnalyticsView" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="MoreInformationLink" Type="String" MaxLength="400" FixedLength="false" Unicode="true" />
+    <Property Name="AddDate" Type="DateTime" Precision="3" />
+    <Property Name="LastUpdated" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Building" Relationship="CREADBModel.FK_Property_Building" FromRole="Property" ToRole="Building" />
+    <NavigationProperty Name="Land" Relationship="CREADBModel.FK_Property_Land" FromRole="Property" ToRole="Land" />
+    <NavigationProperty Name="Photos" Relationship="CREADBModel.FK_Photo_Property" FromRole="Property" ToRole="Photo" />
+    <NavigationProperty Name="PropertyAgents" Relationship="CREADBModel.FK_PropertyAgent_PropertyAgent" FromRole="Property" ToRole="PropertyAgent" />
+  </EntityType>
+  <EntityType Name="PropertyAgent">
+    <Key>
+      <PropertyRef Name="PropertyAgentID" />
+    </Key>
+    <Property Name="PropertyAgentID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PropertyID" Type="Int32" Nullable="false" />
+    <Property Name="AgentID" Type="Int32" />
+    <NavigationProperty Name="Agent" Relationship="CREADBModel.FK_PropertyAgent_Agent" FromRole="PropertyAgent" ToRole="Agent" />
+    <NavigationProperty Name="Property" Relationship="CREADBModel.FK_PropertyAgent_PropertyAgent" FromRole="PropertyAgent" ToRole="Property" />
+  </EntityType>
+  <Association Name="FK_Agent_Office">
+    <End Type="CREADBModel.Office" Role="Office" Multiplicity="0..1" />
+    <End Type="CREADBModel.Agent" Role="Agent" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Office">
+        <PropertyRef Name="OfficeID" />
+      </Principal>
+      <Dependent Role="Agent">
+        <PropertyRef Name="OfficeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PropertyAgent_Agent">
+    <End Type="CREADBModel.Agent" Role="Agent" Multiplicity="0..1" />
+    <End Type="CREADBModel.PropertyAgent" Role="PropertyAgent" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Agent">
+        <PropertyRef Name="AgentID" />
+      </Principal>
+      <Dependent Role="PropertyAgent">
+        <PropertyRef Name="AgentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Property_Building">
+    <End Type="CREADBModel.Building" Role="Building" Multiplicity="0..1" />
+    <End Type="CREADBModel.Property" Role="Property" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Building">
+        <PropertyRef Name="BuildingID" />
+      </Principal>
+      <Dependent Role="Property">
+        <PropertyRef Name="BuildingID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Property_Land">
+    <End Type="CREADBModel.Land" Role="Land" Multiplicity="0..1" />
+    <End Type="CREADBModel.Property" Role="Property" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Land">
+        <PropertyRef Name="LandID" />
+      </Principal>
+      <Dependent Role="Property">
+        <PropertyRef Name="LandID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Photo_Property">
+    <End Type="CREADBModel.Property" Role="Property" Multiplicity="0..1" />
+    <End Type="CREADBModel.Photo" Role="Photo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Property">
+        <PropertyRef Name="PropertyID" />
+      </Principal>
+      <Dependent Role="Photo">
+        <PropertyRef Name="PropertyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PropertyAgent_PropertyAgent">
+    <End Type="CREADBModel.Property" Role="Property" Multiplicity="1" />
+    <End Type="CREADBModel.PropertyAgent" Role="PropertyAgent" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Property">
+        <PropertyRef Name="PropertyID" />
+      </Principal>
+      <Dependent Role="PropertyAgent">
+        <PropertyRef Name="PropertyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

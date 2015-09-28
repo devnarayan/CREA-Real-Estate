@@ -6,3 +6,16 @@ C:\Users\Dev-pc\Downloads\CREAApp\bin\CSharp.pdb
 C:\Users\Dev-pc\Downloads\CREAApp\obj\Debug\CREAApp.csprojResolveAssemblyReference.cache
 C:\Users\Dev-pc\Downloads\CREAApp\obj\Debug\CREAApp.dll
 C:\Users\Dev-pc\Downloads\CREAApp\obj\Debug\CREAApp.pdb
+E:\ComaxCosulting\CREA\CREA-Real-Estate\CREAApp\bin\CREAApp.dll.config
+E:\ComaxCosulting\CREA\CREA-Real-Estate\CREAApp\bin\CREAApp.dll
+E:\ComaxCosulting\CREA\CREA-Real-Estate\CREAApp\bin\CREAApp.pdb
+E:\ComaxCosulting\CREA\CREA-Real-Estate\CREAApp\obj\Debug\CREAApp.csprojResolveAssemblyReference.cache
+E:\ComaxCosulting\CREA\CREA-Real-Estate\CREAApp\obj\Debug\CREAApp.dll
+E:\ComaxCosulting\CREA\CREA-Real-Estate\CREAApp\obj\Debug\CREAApp.pdb
+E:\ComaxCosulting\CREA\CREA-Real-Estate\CREAApp\bin\CREA.Access.dll
+E:\ComaxCosulting\CREA\CREA-Real-Estate\CREAApp\bin\CREA.Access.pdb
+E:\ComaxCosulting\CREA\CREA-Real-Estate\CREAApp\bin\EntityFramework.dll
+E:\ComaxCosulting\CREA\CREA-Real-Estate\CREAApp\bin\EntityFramework.xml
+E:\ComaxCosulting\CREA\CREA-Real-Estate\CREAApp\bin\AutoMapper.dll
+E:\ComaxCosulting\CREA\CREA-Real-Estate\CREAApp\bin\AutoMapper.pdb
+E:\ComaxCosulting\CREA\CREA-Real-Estate\CREAApp\bin\AutoMapper.xml

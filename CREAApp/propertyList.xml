@@ -1,0 +1,1141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RETS ReplyCode="0" ReplyText="Operation successful">
+  <COUNT Records="961" />
+  <RETS-RESPONSE>
+    <Pagination>
+      <TotalRecords>961</TotalRecords>
+      <Limit>10</Limit>
+      <Offset>11</Offset>
+      <TotalPages>97</TotalPages>
+      <RecordsReturned>10</RecordsReturned>
+    </Pagination>
+    <PropertyDetails ID="11937206" LastUpdated="Thu, 14 Jun 2012 16:39:59 GMT">
+      <ListingID>DDF106REC003</ListingID>
+      <AgentDetails ID="1937475">
+        <Name>Caterina Parker</Name>
+        <Office ID="270566">
+          <Name>Rancher's Dream</Name>
+          <Address>
+            <City>Kentville</City>
+          </Address>
+        </Office>
+        <Position>Salesperson</Position>
+      </AgentDetails>
+      <Board>106</Board>
+      <Business />
+      <Building>
+        <BathroomTotal>2</BathroomTotal>
+        <BedroomsTotal>3</BedroomsTotal>
+        <CoolingType>Central air conditioning</CoolingType>
+        <FireplacePresent>False</FireplacePresent>
+        <HeatingFuel>Natural gas</HeatingFuel>
+        <HeatingType>Air circulation heat</HeatingType>
+        <SizeInterior>1685 sqft</SizeInterior>
+        <Type>House</Type>
+      </Building>
+      <Land>
+        <SizeTotal>2355 sqft</SizeTotal>
+        <SizeTotalText>2355 sqft</SizeTotalText>
+        <Acreage>true</Acreage>
+      </Land>
+      <Address>
+        <StreetAddress>1102 Ward Road</StreetAddress>
+        <AddressLine1>1102 Ward Road</AddressLine1>
+        <City>Aylesford</City>
+        <Province>Nova Scotia</Province>
+        <PostalCode>B0P1C0</PostalCode>
+        <Country>Canada</Country>
+      </Address>
+      <Features>Acreage, Beach property, Central location</Features>
+      <FarmType>Animal</FarmType>
+      <Lease>150.00</Lease>
+      <LeasePerTime>Monthly</LeasePerTime>
+      <OwnershipType>Freehold Condo</OwnershipType>
+      <Photo>
+        <PropertyPhoto>
+          <SequenceId>1</SequenceId>
+          <LastUpdated>09/07/2012 3:53:00 PM</LastUpdated>
+        </PropertyPhoto>
+        <PropertyPhoto>
+          <SequenceId>2</SequenceId>
+          <LastUpdated>09/07/2012 3:53:00 PM</LastUpdated>
+        </PropertyPhoto>
+        <PropertyPhoto>
+          <SequenceId>3</SequenceId>
+          <LastUpdated>09/07/2012 3:53:00 PM</LastUpdated>
+        </PropertyPhoto>
+        <PropertyPhoto>
+          <SequenceId>4</SequenceId>
+          <LastUpdated>09/07/2012 3:53:00 PM</LastUpdated>
+        </PropertyPhoto>
+        <PropertyPhoto>
+          <SequenceId>5</SequenceId>
+          <LastUpdated>09/07/2012 3:53:00 PM</LastUpdated>
+        </PropertyPhoto>
+        <PropertyPhoto>
+          <SequenceId>6</SequenceId>
+          <LastUpdated>09/07/2012 3:53:00 PM</LastUpdated>
+        </PropertyPhoto>
+        <PropertyPhoto>
+          <SequenceId>7</SequenceId>
+          <LastUpdated>09/07/2012 3:53:00 PM</LastUpdated>
+        </PropertyPhoto>
+        <PropertyPhoto>
+          <SequenceId>8</SequenceId>
+          <LastUpdated>09/07/2012 3:53:00 PM</LastUpdated>
+        </PropertyPhoto>
+        <PropertyPhoto>
+          <SequenceId>9</SequenceId>
+          <LastUpdated>09/07/2012 3:53:00 PM</LastUpdated>
+        </PropertyPhoto>
+        <PropertyPhoto>
+          <SequenceId>10</SequenceId>
+          <LastUpdated>09/07/2012 3:53:00 PM</LastUpdated>
+        </PropertyPhoto>
+      </Photo>
+      <Price>268000.00</Price>
+      <PropertyType>Recreational</PropertyType>
+      <PublicRemarks>This is the general description field in English</PublicRemarks>
+      <TransactionType>For sale or rent</TransactionType>
+      <UtilitiesAvailable />
+      <ViewType>City view</ViewType>
+      <WaterFrontType>Waterfront</WaterFrontType>
+      <AnalyticsClick>&lt;![CDATA[&lt;script type='text/javascript'&gt;
+ function redirect() { 
+var event = new RlEvent('crealocation');
+event.viewedProperty(11937206,3,[1937475],[270566],[1937465],[0]);
+event.set('event', 'type', 'click');
+event.record();
+setTimeout("window.location = 'http://www.realtor.ca/PropertyDetails.aspx?PropertyId=11937206'",500);}
+&lt;/script&gt;]]&gt;</AnalyticsClick>
+      <AnalyticsView>&lt;![CDATA[&lt;script src='http://analytics.crea.ca/crearl.js' type='text/javascript'&gt;&lt;/script&gt;
+&lt;script type='text/javascript'&gt;
+var event = new RlEvent('crealocation');
+event.viewedProperty(11937206,3,[1937475],[270566],[1937465],[0]);
+event.set('event', 'type', 'view');
+event.record();
+&lt;/script&gt;]]&gt;</AnalyticsView>
+      <MoreInformationLink>http://www.realtor.ca/PropertyDetails.aspx?PropertyId=11937206</MoreInformationLink>
+    </PropertyDetails>
+    <PropertyDetails ID="11937207" LastUpdated="Thu, 14 Jun 2012 16:39:59 GMT">
+      <ListingID>DDF106REC004</ListingID>
+      <AgentDetails ID="1937476">
+        <Name>Bobby Naismith</Name>
+        <Office ID="270567">
+          <Name>Market Chance Real Estate</Name>
+          <Address>
+            <City>Wolfville</City>
+          </Address>
+        </Office>
+        <Position>Salesperson</Position>
+      </AgentDetails>
+      <Board>106</Board>
+      <Business />
+      <Building>
+        <BathroomTotal>2</BathroomTotal>
+        <BedroomsTotal>3</BedroomsTotal>
+        <CoolingType>Central air conditioning</CoolingType>
+        <FireplacePresent>False</FireplacePresent>
+        <HeatingFuel>Natural gas</HeatingFuel>
+        <HeatingType>Air circulation heat</HeatingType>
+        <SizeInterior>1685 sqft</SizeInterior>
+        <Type>House</Type>
+      </Building>
+      <Land>
+        <SizeTotal>2355 sqft</SizeTotal>
+        <SizeTotalText>2355 sqft</SizeTotalText>
+        <Acreage>true</Acreage>
+      </Land>
+      <Address>
+        <StreetAddress>1102 Ward Road</StreetAddress>
+        <AddressLine1>1102 Ward Road</AddressLine1>
+        <City>Aylesford</City>
+        <Province>Nova Scotia</Province>
+        <PostalCode>B0P1C0</PostalCode>
+        <Country>Canada</Country>
+      </Address>
+      <Features>Acreage, Beach property, Central location</Features>
+      <FarmType>Animal</FarmType>
+      <Lease>353.00</Lease>
+      <LeasePerTime>Monthly</LeasePerTime>
+      <OwnershipType>Condominium/Strata</OwnershipType>
+      <Photo>
+        <PropertyPhoto>
+          <SequenceId>1</SequenceId>
+          <LastUpdated>09/07/2012 3:53:00 PM</LastUpdated>
+        </PropertyPhoto>
+        <PropertyPhoto>
+          <SequenceId>2</SequenceId>
+          <LastUpdated>09/07/2012 3:53:00 PM</LastUpdated>
+        </PropertyPhoto>
+        <PropertyPhoto>
+          <SequenceId>3</SequenceId>
+          <LastUpdated>09/07/2012 3:53:00 PM</LastUpdated>
+        </PropertyPhoto>
+        <PropertyPhoto>
+          <SequenceId>4</SequenceId>
+          <LastUpdated>09/07/2012 3:53:00 PM</LastUpdated>
+        </PropertyPhoto>
+        <PropertyPhoto>
+          <SequenceId>5</SequenceId>
+          <LastUpdated>09/07/2012 3:53:00 PM</LastUpdated>
+        </PropertyPhoto>
+        <PropertyPhoto>
+          <SequenceId>6</SequenceId>
+          <LastUpdated>09/07/2012 3:53:00 PM</LastUpdated>
+        </PropertyPhoto>
+        <PropertyPhoto>
+          <SequenceId>7</SequenceId>
+          <LastUpdated>09/07/2012 3:53:00 PM</LastUpdated>
+        </PropertyPhoto>
+        <PropertyPhoto>
+          <SequenceId>8</SequenceId>
+          <LastUpdated>09/07/2012 3:53:00 PM</LastUpdated>
+        </PropertyPhoto>
+        <PropertyPhoto>
+          <SequenceId>9</SequenceId>
+          <LastUpdated>09/07/2012 3:53:00 PM</LastUpdated>
+        </PropertyPhoto>
+        <PropertyPhoto>
+          <SequenceId>10</SequenceId>
+          <LastUpdated>09/07/2012 3:53:00 PM</LastUpdated>
+        </PropertyPhoto>
+      </Photo>
+      <Price>551000.00</Price>
+      <PropertyType>Recreational</PropertyType>
+      <PublicRemarks>This is the general description field in English</PublicRemarks>
+      <TransactionType>For sale or rent</TransactionType>
+      <UtilitiesAvailable />
+      <ViewType>City view</ViewType>
+      <WaterFrontType>Restricted waterfront</WaterFrontType>
+      <AnalyticsClick>&lt;![CDATA[&lt;script type='text/javascript'&gt;
+ function redirect() { 
+var event = new RlEvent('crealocation');
+event.viewedProperty(11937207,3,[1937476],[270567],[1937465],[0]);
+event.set('event', 'type', 'click');
+event.record();
+setTimeout("window.location = 'http://www.realtor.ca/PropertyDetails.aspx?PropertyId=11937207'",500);}
+&lt;/script&gt;]]&gt;</AnalyticsClick>
+      <AnalyticsView>&lt;![CDATA[&lt;script src='http://analytics.crea.ca/crearl.js' type='text/javascript'&gt;&lt;/script&gt;
+&lt;script type='text/javascript'&gt;
+var event = new RlEvent('crealocation');
+event.viewedProperty(11937207,3,[1937476],[270567],[1937465],[0]);
+event.set('event', 'type', 'view');
+event.record();
+&lt;/script&gt;]]&gt;</AnalyticsView>
+      <MoreInformationLink>http://www.realtor.ca/PropertyDetails.aspx?PropertyId=11937207</MoreInformationLink>
+    </PropertyDetails>
+    <PropertyDetails ID="11937208" LastUpdated="Thu, 14 Jun 2012 16:40:00 GMT">
+      <ListingID>DDF106REC005</ListingID>
+      <AgentDetails ID="1937477">
+        <Name>Charles Armstrong</Name>
+        <Office ID="270567">
+          <Name>Market Chance Real Estate</Name>
+          <Address>
+            <City>Wolfville</City>
+          </Address>
+        </Office>
+        <Position>Salesperson</Position>
+      </AgentDetails>
+      <Board>106</Board>
+      <Business />
+      <Building>
+        <BathroomTotal>2</BathroomTotal>
+        <BedroomsTotal>3</BedroomsTotal>
+        <CoolingType>Central air conditioning</CoolingType>
+        <FireplacePresent>False</FireplacePresent>
+        <HeatingFuel>Natural gas</HeatingFuel>
+        <HeatingType>Air circulation heat</HeatingType>
+        <SizeInterior>1685 sqft</SizeInterior>
+        <Type>House</Type>
+      </Building>
+      <Land>
+        <SizeTotal>2355 sqft</SizeTotal>
+        <SizeTotalText>2355 sqft</SizeTotalText>
+        <Acreage>true</Acreage>
+      </Land>
+      <Address>
+        <StreetAddress>1102 Ward Road</StreetAddress>
+        <AddressLine1>1102 Ward Road</AddressLine1>
+        <City>Aylesford</City>
+        <Province>Nova Scotia</Province>
+        <PostalCode>B0P1C0</PostalCode>
+        <Country>Canada</Country>
+      </Address>
+      <Features>Acreage, Beach property, Central location</Features>
+      <FarmType>Animal</FarmType>
+      <Lease>418.00</Lease>
+      <LeasePerTime>Monthly</LeasePerTime>
+      <OwnershipType>Leasehold Condo/Strata</OwnershipType>
+      <Photo>
+        <PropertyPhoto>
+          <SequenceId>1</SequenceId>
+          <LastUpdated>09/07/2012 3:53:00 PM</LastUpdated>
+        </PropertyPhoto>
+        <PropertyPhoto>
+          <SequenceId>2</SequenceId>
+          <LastUpdated>09/07/2012 3:53:00 PM</LastUpdated>
+        </PropertyPhoto>
+        <PropertyPhoto>
+          <SequenceId>3</SequenceId>
+          <LastUpdated>09/07/2012 3:53:00 PM</LastUpdated>
+        </PropertyPhoto>
+        <PropertyPhoto>
+          <SequenceId>4</SequenceId>
+          <LastUpdated>09/07/2012 3:53:00 PM</LastUpdated>
+        </PropertyPhoto>
+        <PropertyPhoto>
+          <SequenceId>5</SequenceId>
+          <LastUpdated>09/07/2012 3:53:00 PM</LastUpdated>
+        </PropertyPhoto>
+        <PropertyPhoto>
+          <SequenceId>6</SequenceId>
+          <LastUpdated>09/07/2012 3:53:00 PM</LastUpdated>
+        </PropertyPhoto>
+        <PropertyPhoto>
+          <SequenceId>7</SequenceId>
+          <LastUpdated>09/07/2012 3:53:00 PM</LastUpdated>
+        </PropertyPhoto>
+        <PropertyPhoto>
+          <SequenceId>8</SequenceId>
+          <LastUpdated>09/07/2012 3:53:00 PM</LastUpdated>
+        </PropertyPhoto>
+        <PropertyPhoto>
+          <SequenceId>9</SequenceId>
+          <LastUpdated>09/07/2012 3:53:00 PM</LastUpdated>
+        </PropertyPhoto>
+        <PropertyPhoto>
+          <SequenceId>10</SequenceId>
+          <LastUpdated>09/07/2012 3:53:00 PM</LastUpdated>
+        </PropertyPhoto>
+      </Photo>
+      <Price>250000.00</Price>
+      <PropertyType>Recreational</PropertyType>
+      <PublicRemarks>This is the general description field in English</PublicRemarks>
+      <TransactionType>For sale or rent</TransactionType>
+      <UtilitiesAvailable />
+      <ViewType>City view</ViewType>
+      <WaterFrontType>Unknown</WaterFrontType>
+      <AnalyticsClick>&lt;![CDATA[&lt;script type='text/javascript'&gt;
+ function redirect() { 
+var event = new RlEvent('crealocation');
+event.viewedProperty(11937208,3,[1937477],[270567],[1937465],[0]);
+event.set('event', 'type', 'click');
+event.record();
+setTimeout("window.location = 'http://www.realtor.ca/PropertyDetails.aspx?PropertyId=11937208'",500);}
+&lt;/script&gt;]]&gt;</AnalyticsClick>
+      <AnalyticsView>&lt;![CDATA[&lt;script src='http://analytics.crea.ca/crearl.js' type='text/javascript'&gt;&lt;/script&gt;
+&lt;script type='text/javascript'&gt;
+var event = new RlEvent('crealocation');
+event.viewedProperty(11937208,3,[1937477],[270567],[1937465],[0]);
+event.set('event', 'type', 'view');
+event.record();
+&lt;/script&gt;]]&gt;</AnalyticsView>
+      <MoreInformationLink>http://www.realtor.ca/PropertyDetails.aspx?PropertyId=11937208</MoreInformationLink>
+    </PropertyDetails>
+    <PropertyDetails ID="11937209" LastUpdated="Thu, 14 Jun 2012 16:40:00 GMT">
+      <ListingID>DDF106REC006</ListingID>
+      <AgentDetails ID="1937478">
+        <Name>Chad Ngota</Name>
+        <Office ID="270568">
+          <Name>Houses 4 U</Name>
+          <Address>
+            <City>Wolfville</City>
+          </Address>
+        </Office>
+        <Position>Salesperson</Position>
+      </AgentDetails>
+      <Board>106</Board>
+      <Business />
+      <Building>
+        <BathroomTotal>2</BathroomTotal>
+        <BedroomsTotal>3</BedroomsTotal>
+        <CoolingType>Central air conditioning</CoolingType>
+        <FireplacePresent>False</FireplacePresent>
+        <HeatingFuel>Natural gas</HeatingFuel>
+        <HeatingType>Air circulation heat</HeatingType>
+        <SizeInterior>1685 sqft</SizeInterior>
+        <Type>House</Type>
+      </Building>
+      <Land>
+        <SizeTotal>2355 sqft</SizeTotal>
+        <SizeTotalText>2355 sqft</SizeTotalText>
+        <Acreage>true</Acreage>
+      </Land>
+      <Address>
+        <StreetAddress>1102 Ward Road</StreetAddress>
+        <AddressLine1>1102 Ward Road</AddressLine1>
+        <City>Aylesford</City>
+        <Province>Nova Scotia</Province>
+        <PostalCode>B0P1C0</PostalCode>
+        <Country>Canada</Country>
+      </Address>
+      <Features>Acreage, Beach property, Central location</Features>
+      <FarmType>Animal</FarmType>
+      <Lease>183.00</Lease>
+      <LeasePerTime>Monthly</LeasePerTime>
+      <OwnershipType>Freehold</OwnershipType>
+      <Photo>
+        <PropertyPhoto>
+          <SequenceId>1</SequenceId>
+          <LastUpdated>09/07/2012 3:53:00 PM</LastUpdated>
+        </PropertyPhoto>
+        <PropertyPhoto>
+          <SequenceId>2</SequenceId>
+          <LastUpdated>09/07/2012 3:53:00 PM</LastUpdated>
+        </PropertyPhoto>
+        <PropertyPhoto>
+          <SequenceId>3</SequenceId>
+          <LastUpdated>09/07/2012 3:53:00 PM</LastUpdated>
+        </PropertyPhoto>
+        <PropertyPhoto>
+          <SequenceId>4</SequenceId>
+          <LastUpdated>09/07/2012 3:53:00 PM</LastUpdated>
+        </PropertyPhoto>
+        <PropertyPhoto>
+          <SequenceId>5</SequenceId>
+          <LastUpdated>09/07/2012 3:53:00 PM</LastUpdated>
+        </PropertyPhoto>
+        <PropertyPhoto>
+          <SequenceId>6</SequenceId>
+          <LastUpdated>09/07/2012 3:53:00 PM</LastUpdated>
+        </PropertyPhoto>
+        <PropertyPhoto>
+          <SequenceId>7</SequenceId>
+          <LastUpdated>09/07/2012 3:53:00 PM</LastUpdated>
+        </PropertyPhoto>
+        <PropertyPhoto>
+          <SequenceId>8</SequenceId>
+          <LastUpdated>09/07/2012 3:53:00 PM</LastUpdated>
+        </PropertyPhoto>
+        <PropertyPhoto>
+          <SequenceId>9</SequenceId>
+          <LastUpdated>09/07/2012 3:53:00 PM</LastUpdated>
+        </PropertyPhoto>
+        <PropertyPhoto>
+          <SequenceId>10</SequenceId>
+          <LastUpdated>09/07/2012 3:53:00 PM</LastUpdated>
+        </PropertyPhoto>
+      </Photo>
+      <Price>723000.00</Price>
+      <PropertyType>Recreational</PropertyType>
+      <PublicRemarks>This is the general description field in English</PublicRemarks>
+      <TransactionType>For sale or rent</TransactionType>
+      <UtilitiesAvailable />
+      <ViewType>City view</ViewType>
+      <WaterFrontType>Waterfront, Road Between</WaterFrontType>
+      <AnalyticsClick>&lt;![CDATA[&lt;script type='text/javascript'&gt;
+ function redirect() { 
+var event = new RlEvent('crealocation');
+event.viewedProperty(11937209,3,[1937478],[270568],[1937465],[0]);
+event.set('event', 'type', 'click');
+event.record();
+setTimeout("window.location = 'http://www.realtor.ca'",500);}
+&lt;/script&gt;]]&gt;</AnalyticsClick>
+      <AnalyticsView>&lt;![CDATA[&lt;script src='http://analytics.crea.ca/crearl.js' type='text/javascript'&gt;&lt;/script&gt;
+&lt;script type='text/javascript'&gt;
+var event = new RlEvent('crealocation');
+event.viewedProperty(11937209,3,[1937478],[270568],[1937465],[0]);
+event.set('event', 'type', 'view');
+event.record();
+&lt;/script&gt;]]&gt;</AnalyticsView>
+      <MoreInformationLink>http://www.realtor.ca</MoreInformationLink>
+    </PropertyDetails>
+    <PropertyDetails ID="11937210" LastUpdated="Thu, 14 Jun 2012 16:40:00 GMT">
+      <ListingID>DDF106REC007</ListingID>
+      <AgentDetails ID="1937479">
+        <Name>Lucy Liu</Name>
+        <Office ID="270568">
+          <Name>Houses 4 U</Name>
+          <Address>
+            <City>Wolfville</City>
+          </Address>
+        </Office>
+        <Position>Salesperson</Position>
+      </AgentDetails>
+      <Board>106</Board>
+      <Business />
+      <Building>
+        <BathroomTotal>2</BathroomTotal>
+        <BedroomsTotal>3</BedroomsTotal>
+        <CoolingType>Central air conditioning</CoolingType>
+        <FireplacePresent>False</FireplacePresent>
+        <HeatingFuel>Natural gas</HeatingFuel>
+        <HeatingType>Air circulation heat</HeatingType>
+        <SizeInterior>1685 sqft</SizeInterior>
+        <Type>House</Type>
+      </Building>
+      <Land>
+        <SizeTotal>2355 sqft</SizeTotal>
+        <SizeTotalText>2355 sqft</SizeTotalText>
+        <Acreage>true</Acreage>
+      </Land>
+      <Address>
+        <StreetAddress>1102 Ward Road</StreetAddress>
+        <AddressLine1>1102 Ward Road</AddressLine1>
+        <City>Aylesford</City>
+        <Province>Nova Scotia</Province>
+        <PostalCode>B0P1C0</PostalCode>
+        <Country>Canada</Country>
+      </Address>
+      <Features>Acreage, Beach property, Central location</Features>
+      <FarmType>Animal</FarmType>
+      <OwnershipType>Leasehold</OwnershipType>
+      <Photo>
+        <PropertyPhoto>
+          <SequenceId>1</SequenceId>
+          <LastUpdated>09/07/2012 3:53:00 PM</LastUpdated>
+        </PropertyPhoto>
+        <PropertyPhoto>
+          <SequenceId>2</SequenceId>
+          <LastUpdated>09/07/2012 3:53:00 PM</LastUpdated>
+        </PropertyPhoto>
+        <PropertyPhoto>
+          <SequenceId>3</SequenceId>
+          <LastUpdated>09/07/2012 3:53:00 PM</LastUpdated>
+        </PropertyPhoto>
+        <PropertyPhoto>
+          <SequenceId>4</SequenceId>
+          <LastUpdated>09/07/2012 3:53:00 PM</LastUpdated>
+        </PropertyPhoto>
+        <PropertyPhoto>
+          <SequenceId>5</SequenceId>
+          <LastUpdated>09/07/2012 3:53:00 PM</LastUpdated>
+        </PropertyPhoto>
+        <PropertyPhoto>
+          <SequenceId>6</SequenceId>
+          <LastUpdated>09/07/2012 3:53:00 PM</LastUpdated>
+        </PropertyPhoto>
+        <PropertyPhoto>
+          <SequenceId>7</SequenceId>
+          <LastUpdated>09/07/2012 3:53:00 PM</LastUpdated>
+        </PropertyPhoto>
+        <PropertyPhoto>
+          <SequenceId>8</SequenceId>
+          <LastUpdated>09/07/2012 3:53:00 PM</LastUpdated>
+        </PropertyPhoto>
+        <PropertyPhoto>
+          <SequenceId>9</SequenceId>
+          <LastUpdated>09/07/2012 3:53:00 PM</LastUpdated>
+        </PropertyPhoto>
+        <PropertyPhoto>
+          <SequenceId>10</SequenceId>
+          <LastUpdated>09/07/2012 3:53:00 PM</LastUpdated>
+        </PropertyPhoto>
+      </Photo>
+      <Price>323000.00</Price>
+      <PropertyType>Recreational</PropertyType>
+      <PublicRemarks>This is the general description field in English</PublicRemarks>
+      <TransactionType>For sale</TransactionType>
+      <UtilitiesAvailable />
+      <ViewType>City view</ViewType>
+      <WaterFrontType>Island</WaterFrontType>
+      <AnalyticsClick>&lt;![CDATA[&lt;script type='text/javascript'&gt;
+ function redirect() { 
+var event = new RlEvent('crealocation');
+event.viewedProperty(11937210,3,[1937479],[270568],[1937465],[0]);
+event.set('event', 'type', 'click');
+event.record();
+setTimeout("window.location = 'http://www.realtor.ca'",500);}
+&lt;/script&gt;]]&gt;</AnalyticsClick>
+      <AnalyticsView>&lt;![CDATA[&lt;script src='http://analytics.crea.ca/crearl.js' type='text/javascript'&gt;&lt;/script&gt;
+&lt;script type='text/javascript'&gt;
+var event = new RlEvent('crealocation');
+event.viewedProperty(11937210,3,[1937479],[270568],[1937465],[0]);
+event.set('event', 'type', 'view');
+event.record();
+&lt;/script&gt;]]&gt;</AnalyticsView>
+      <MoreInformationLink>http://www.realtor.ca</MoreInformationLink>
+    </PropertyDetails>
+    <PropertyDetails ID="11937211" LastUpdated="Thu, 14 Jun 2012 16:40:00 GMT">
+      <ListingID>DDF106REC008</ListingID>
+      <AgentDetails ID="1937470">
+        <Name>Michelle Otterby</Name>
+        <Office ID="270564">
+          <Name>Consumer Housing Inc.</Name>
+          <Address>
+            <City>Kentville</City>
+          </Address>
+        </Office>
+        <Position>Salesperson</Position>
+      </AgentDetails>
+      <AgentDetails ID="1937472">
+        <Name>Phil Carson</Name>
+        <Office ID="270565">
+          <Name>CanCom Real Estate</Name>
+          <Address>
+            <City>Kentville</City>
+          </Address>
+        </Office>
+        <Position>Salesperson</Position>
+      </AgentDetails>
+      <Board>106</Board>
+      <Business />
+      <Building>
+        <BathroomTotal>2</BathroomTotal>
+        <BedroomsTotal>3</BedroomsTotal>
+        <CoolingType>Central air conditioning</CoolingType>
+        <FireplacePresent>False</FireplacePresent>
+        <HeatingFuel>Natural gas</HeatingFuel>
+        <HeatingType>Air circulation heat</HeatingType>
+        <SizeInterior>1685 sqft</SizeInterior>
+        <Type>House</Type>
+      </Building>
+      <Land>
+        <SizeTotal>2355 sqft</SizeTotal>
+        <SizeTotalText>2355 sqft</SizeTotalText>
+        <Acreage>true</Acreage>
+      </Land>
+      <Address>
+        <StreetAddress>1102 Ward Road</StreetAddress>
+        <AddressLine1>1102 Ward Road</AddressLine1>
+        <City>Aylesford</City>
+        <Province>Nova Scotia</Province>
+        <PostalCode>B0P1C0</PostalCode>
+        <Country>Canada</Country>
+      </Address>
+      <Features>Acreage, Beach property, Central location</Features>
+      <FarmType>Animal</FarmType>
+      <Lease>99.00</Lease>
+      <LeasePerTime>Monthly</LeasePerTime>
+      <OwnershipType>Timeshare/Fractional</OwnershipType>
+      <Photo>
+        <PropertyPhoto>
+          <SequenceId>1</SequenceId>
+          <LastUpdated>09/07/2012 3:53:00 PM</LastUpdated>
+        </PropertyPhoto>
+        <PropertyPhoto>
+          <SequenceId>2</SequenceId>
+          <LastUpdated>09/07/2012 3:53:00 PM</LastUpdated>
+        </PropertyPhoto>
+        <PropertyPhoto>
+          <SequenceId>3</SequenceId>
+          <LastUpdated>09/07/2012 3:53:00 PM</LastUpdated>
+        </PropertyPhoto>
+        <PropertyPhoto>
+          <SequenceId>4</SequenceId>
+          <LastUpdated>09/07/2012 3:53:00 PM</LastUpdated>
+        </PropertyPhoto>
+        <PropertyPhoto>
+          <SequenceId>5</SequenceId>
+          <LastUpdated>09/07/2012 3:53:00 PM</LastUpdated>
+        </PropertyPhoto>
+        <PropertyPhoto>
+          <SequenceId>6</SequenceId>
+          <LastUpdated>09/07/2012 3:53:00 PM</LastUpdated>
+        </PropertyPhoto>
+        <PropertyPhoto>
+          <SequenceId>7</SequenceId>
+          <LastUpdated>09/07/2012 3:53:00 PM</LastUpdated>
+        </PropertyPhoto>
+        <PropertyPhoto>
+          <SequenceId>8</SequenceId>
+          <LastUpdated>09/07/2012 3:53:00 PM</LastUpdated>
+        </PropertyPhoto>
+        <PropertyPhoto>
+          <SequenceId>9</SequenceId>
+          <LastUpdated>09/07/2012 3:53:00 PM</LastUpdated>
+        </PropertyPhoto>
+        <PropertyPhoto>
+          <SequenceId>10</SequenceId>
+          <LastUpdated>09/07/2012 3:53:00 PM</LastUpdated>
+        </PropertyPhoto>
+      </Photo>
+      <Price>83000.00</Price>
+      <PropertyType>Recreational</PropertyType>
+      <PublicRemarks>This is the general description field in English</PublicRemarks>
+      <TransactionType>For sale or rent</TransactionType>
+      <UtilitiesAvailable />
+      <ViewType>City view</ViewType>
+      <WaterFrontType>Other</WaterFrontType>
+      <AnalyticsClick>&lt;![CDATA[&lt;script type='text/javascript'&gt;
+ function redirect() { 
+var event = new RlEvent('crealocation');
+event.viewedProperty(11937211,3,[1937470,1937472],[270564,270565],[1937465,1937465],[0,0]);
+event.set('event', 'type', 'click');
+event.record();
+setTimeout("window.location = 'http://www.realtor.ca'",500);}
+&lt;/script&gt;]]&gt;</AnalyticsClick>
+      <AnalyticsView>&lt;![CDATA[&lt;script src='http://analytics.crea.ca/crearl.js' type='text/javascript'&gt;&lt;/script&gt;
+&lt;script type='text/javascript'&gt;
+var event = new RlEvent('crealocation');
+event.viewedProperty(11937211,3,[1937470,1937472],[270564,270565],[1937465,1937465],[0,0]);
+event.set('event', 'type', 'view');
+event.record();
+&lt;/script&gt;]]&gt;</AnalyticsView>
+      <MoreInformationLink>http://www.realtor.ca</MoreInformationLink>
+    </PropertyDetails>
+    <PropertyDetails ID="11937212" LastUpdated="Thu, 14 Jun 2012 16:40:00 GMT">
+      <ListingID>DDF106LAND001</ListingID>
+      <AgentDetails ID="1937471">
+        <Name>Christina Vaillancourt</Name>
+        <Office ID="270564">
+          <Name>Consumer Housing Inc.</Name>
+          <Address>
+            <City>Kentville</City>
+          </Address>
+        </Office>
+        <Position>Salesperson</Position>
+      </AgentDetails>
+      <AgentDetails ID="1937473">
+        <Name>Annette Brown</Name>
+        <Office ID="270565">
+          <Name>CanCom Real Estate</Name>
+          <Address>
+            <City>Kentville</City>
+          </Address>
+        </Office>
+        <Position>Salesperson</Position>
+      </AgentDetails>
+      <Board>106</Board>
+      <Business />
+      <Building>
+        <BathroomTotal>2</BathroomTotal>
+        <BedroomsTotal>3</BedroomsTotal>
+        <CoolingType>Central air conditioning</CoolingType>
+        <FireplacePresent>False</FireplacePresent>
+        <HeatingFuel>Natural gas</HeatingFuel>
+        <HeatingType>Air circulation heat</HeatingType>
+        <SizeInterior>1685 sqft</SizeInterior>
+        <Type>House</Type>
+      </Building>
+      <Land>
+        <SizeTotal>2355 sqft</SizeTotal>
+        <SizeTotalText>2355 sqft</SizeTotalText>
+        <Acreage>true</Acreage>
+      </Land>
+      <Address>
+        <StreetAddress>1102 Ward Road</StreetAddress>
+        <AddressLine1>1102 Ward Road</AddressLine1>
+        <City>Aylesford</City>
+        <Province>Nova Scotia</Province>
+        <PostalCode>B0P1C0</PostalCode>
+        <Country>Canada</Country>
+      </Address>
+      <Features>Acreage, Beach property, Central location</Features>
+      <FarmType>Animal</FarmType>
+      <Lease>322.00</Lease>
+      <LeasePerTime>Monthly</LeasePerTime>
+      <OwnershipType>Condominium/Strata</OwnershipType>
+      <Photo>
+        <PropertyPhoto>
+          <SequenceId>1</SequenceId>
+          <LastUpdated>09/07/2012 3:53:00 PM</LastUpdated>
+        </PropertyPhoto>
+        <PropertyPhoto>
+          <SequenceId>2</SequenceId>
+          <LastUpdated>09/07/2012 3:53:00 PM</LastUpdated>
+        </PropertyPhoto>
+        <PropertyPhoto>
+          <SequenceId>3</SequenceId>
+          <LastUpdated>09/07/2012 3:53:00 PM</LastUpdated>
+        </PropertyPhoto>
+        <PropertyPhoto>
+          <SequenceId>4</SequenceId>
+          <LastUpdated>09/07/2012 3:53:00 PM</LastUpdated>
+        </PropertyPhoto>
+        <PropertyPhoto>
+          <SequenceId>5</SequenceId>
+          <LastUpdated>09/07/2012 3:53:00 PM</LastUpdated>
+        </PropertyPhoto>
+        <PropertyPhoto>
+          <SequenceId>6</SequenceId>
+          <LastUpdated>09/07/2012 3:53:00 PM</LastUpdated>
+        </PropertyPhoto>
+        <PropertyPhoto>
+          <SequenceId>7</SequenceId>
+          <LastUpdated>09/07/2012 3:53:00 PM</LastUpdated>
+        </PropertyPhoto>
+        <PropertyPhoto>
+          <SequenceId>8</SequenceId>
+          <LastUpdated>09/07/2012 3:53:00 PM</LastUpdated>
+        </PropertyPhoto>
+        <PropertyPhoto>
+          <SequenceId>9</SequenceId>
+          <LastUpdated>09/07/2012 3:53:00 PM</LastUpdated>
+        </PropertyPhoto>
+        <PropertyPhoto>
+          <SequenceId>10</SequenceId>
+          <LastUpdated>09/07/2012 3:53:00 PM</LastUpdated>
+        </PropertyPhoto>
+      </Photo>
+      <Price>215000.00</Price>
+      <PropertyType>Vacant Land</PropertyType>
+      <PublicRemarks>This is the general description field in English</PublicRemarks>
+      <TransactionType>For sale or rent</TransactionType>
+      <UtilitiesAvailable />
+      <ViewType>City view</ViewType>
+      <WaterFrontType>Waterfront</WaterFrontType>
+      <AnalyticsClick>&lt;![CDATA[&lt;script type='text/javascript'&gt;
+ function redirect() { 
+var event = new RlEvent('crealocation');
+event.viewedProperty(11937212,3,[1937471,1937473],[270564,270565],[1937465,1937465],[0,0]);
+event.set('event', 'type', 'click');
+event.record();
+setTimeout("window.location = 'http://www.realtor.ca'",500);}
+&lt;/script&gt;]]&gt;</AnalyticsClick>
+      <AnalyticsView>&lt;![CDATA[&lt;script src='http://analytics.crea.ca/crearl.js' type='text/javascript'&gt;&lt;/script&gt;
+&lt;script type='text/javascript'&gt;
+var event = new RlEvent('crealocation');
+event.viewedProperty(11937212,3,[1937471,1937473],[270564,270565],[1937465,1937465],[0,0]);
+event.set('event', 'type', 'view');
+event.record();
+&lt;/script&gt;]]&gt;</AnalyticsView>
+      <MoreInformationLink>http://www.realtor.ca</MoreInformationLink>
+    </PropertyDetails>
+    <PropertyDetails ID="11937213" LastUpdated="Thu, 14 Jun 2012 16:40:01 GMT">
+      <ListingID>DDF106LAND002</ListingID>
+      <AgentDetails ID="1937472">
+        <Name>Phil Carson</Name>
+        <Office ID="270565">
+          <Name>CanCom Real Estate</Name>
+          <Address>
+            <City>Kentville</City>
+          </Address>
+        </Office>
+        <Position>Salesperson</Position>
+      </AgentDetails>
+      <AgentDetails ID="1937473">
+        <Name>Annette Brown</Name>
+        <Office ID="270565">
+          <Name>CanCom Real Estate</Name>
+          <Address>
+            <City>Kentville</City>
+          </Address>
+        </Office>
+        <Position>Salesperson</Position>
+      </AgentDetails>
+      <Board>106</Board>
+      <Business />
+      <Building>
+        <BathroomTotal>2</BathroomTotal>
+        <BedroomsTotal>3</BedroomsTotal>
+        <CoolingType>Central air conditioning</CoolingType>
+        <FireplacePresent>False</FireplacePresent>
+        <HeatingFuel>Natural gas</HeatingFuel>
+        <HeatingType>Air circulation heat</HeatingType>
+        <SizeInterior>1685 sqft</SizeInterior>
+        <Type>House</Type>
+      </Building>
+      <Land>
+        <SizeTotal>2355 sqft</SizeTotal>
+        <SizeTotalText>2355 sqft</SizeTotalText>
+        <Acreage>true</Acreage>
+      </Land>
+      <Address>
+        <StreetAddress>1102 Ward Road</StreetAddress>
+        <AddressLine1>1102 Ward Road</AddressLine1>
+        <City>Aylesford</City>
+        <Province>Nova Scotia</Province>
+        <PostalCode>B0P1C0</PostalCode>
+        <Country>Canada</Country>
+      </Address>
+      <Features>Acreage, Beach property, Central location</Features>
+      <FarmType>Animal</FarmType>
+      <Lease>521.00</Lease>
+      <LeasePerTime>Monthly</LeasePerTime>
+      <OwnershipType>Leasehold Condo/Strata</OwnershipType>
+      <Photo>
+        <PropertyPhoto>
+          <SequenceId>1</SequenceId>
+          <LastUpdated>09/07/2012 3:53:00 PM</LastUpdated>
+        </PropertyPhoto>
+        <PropertyPhoto>
+          <SequenceId>2</SequenceId>
+          <LastUpdated>09/07/2012 3:53:00 PM</LastUpdated>
+        </PropertyPhoto>
+        <PropertyPhoto>
+          <SequenceId>3</SequenceId>
+          <LastUpdated>09/07/2012 3:53:00 PM</LastUpdated>
+        </PropertyPhoto>
+        <PropertyPhoto>
+          <SequenceId>4</SequenceId>
+          <LastUpdated>09/07/2012 3:53:00 PM</LastUpdated>
+        </PropertyPhoto>
+        <PropertyPhoto>
+          <SequenceId>5</SequenceId>
+          <LastUpdated>09/07/2012 3:53:00 PM</LastUpdated>
+        </PropertyPhoto>
+        <PropertyPhoto>
+          <SequenceId>6</SequenceId>
+          <LastUpdated>09/07/2012 3:53:00 PM</LastUpdated>
+        </PropertyPhoto>
+        <PropertyPhoto>
+          <SequenceId>7</SequenceId>
+          <LastUpdated>09/07/2012 3:53:00 PM</LastUpdated>
+        </PropertyPhoto>
+        <PropertyPhoto>
+          <SequenceId>8</SequenceId>
+          <LastUpdated>09/07/2012 3:53:00 PM</LastUpdated>
+        </PropertyPhoto>
+        <PropertyPhoto>
+          <SequenceId>9</SequenceId>
+          <LastUpdated>09/07/2012 3:53:00 PM</LastUpdated>
+        </PropertyPhoto>
+        <PropertyPhoto>
+          <SequenceId>10</SequenceId>
+          <LastUpdated>09/07/2012 3:53:00 PM</LastUpdated>
+        </PropertyPhoto>
+      </Photo>
+      <Price>123000.00</Price>
+      <PropertyType>Vacant Land</PropertyType>
+      <PublicRemarks>This is the general description field in English</PublicRemarks>
+      <TransactionType>For sale or rent</TransactionType>
+      <UtilitiesAvailable />
+      <ViewType>City view</ViewType>
+      <WaterFrontType>Waterfront on lake</WaterFrontType>
+      <AnalyticsClick>&lt;![CDATA[&lt;script type='text/javascript'&gt;
+ function redirect() { 
+var event = new RlEvent('crealocation');
+event.viewedProperty(11937213,3,[1937472,1937473],[270565,270565],[1937465,1937465],[0,0]);
+event.set('event', 'type', 'click');
+event.record();
+setTimeout("window.location = 'http://www.realtor.ca/PropertyDetails.aspx?PropertyId=11937213'",500);}
+&lt;/script&gt;]]&gt;</AnalyticsClick>
+      <AnalyticsView>&lt;![CDATA[&lt;script src='http://analytics.crea.ca/crearl.js' type='text/javascript'&gt;&lt;/script&gt;
+&lt;script type='text/javascript'&gt;
+var event = new RlEvent('crealocation');
+event.viewedProperty(11937213,3,[1937472,1937473],[270565,270565],[1937465,1937465],[0,0]);
+event.set('event', 'type', 'view');
+event.record();
+&lt;/script&gt;]]&gt;</AnalyticsView>
+      <MoreInformationLink>http://www.realtor.ca/PropertyDetails.aspx?PropertyId=11937213</MoreInformationLink>
+    </PropertyDetails>
+    <PropertyDetails ID="11937214" LastUpdated="Thu, 14 Jun 2012 16:40:01 GMT">
+      <ListingID>DDF106LAND003</ListingID>
+      <AgentDetails ID="1937465">
+        <Name>Alex Drow</Name>
+        <Office ID="270564">
+          <Name>Consumer Housing Inc.</Name>
+          <Address>
+            <City>Kentville</City>
+          </Address>
+        </Office>
+        <Position>Broker Owner</Position>
+      </AgentDetails>
+      <AgentDetails ID="1937466">
+        <Name>Deborah James</Name>
+        <Office ID="270565">
+          <Name>CanCom Real Estate</Name>
+          <Address>
+            <City>Kentville</City>
+          </Address>
+        </Office>
+        <Position>Broker Owner</Position>
+      </AgentDetails>
+      <Board>106</Board>
+      <Business />
+      <Building>
+        <BathroomTotal>2</BathroomTotal>
+        <BedroomsTotal>3</BedroomsTotal>
+        <CoolingType>Central air conditioning</CoolingType>
+        <FireplacePresent>False</FireplacePresent>
+        <HeatingFuel>Natural gas</HeatingFuel>
+        <HeatingType>Air circulation heat</HeatingType>
+        <SizeInterior>1685 sqft</SizeInterior>
+        <Type>House</Type>
+      </Building>
+      <Land>
+        <SizeTotal>2355 sqft</SizeTotal>
+        <SizeTotalText>2355 sqft</SizeTotalText>
+        <Acreage>true</Acreage>
+      </Land>
+      <Address>
+        <StreetAddress>1102 Ward Road</StreetAddress>
+        <AddressLine1>1102 Ward Road</AddressLine1>
+        <City>Aylesford</City>
+        <Province>Nova Scotia</Province>
+        <PostalCode>B0P1C0</PostalCode>
+        <Country>Canada</Country>
+      </Address>
+      <Features>Acreage, Beach property, Central location</Features>
+      <FarmType>Animal</FarmType>
+      <Lease>125.00</Lease>
+      <LeasePerTime>Monthly</LeasePerTime>
+      <OwnershipType>Freehold</OwnershipType>
+      <Photo>
+        <PropertyPhoto>
+          <SequenceId>1</SequenceId>
+          <LastUpdated>09/07/2012 3:53:00 PM</LastUpdated>
+        </PropertyPhoto>
+        <PropertyPhoto>
+          <SequenceId>2</SequenceId>
+          <LastUpdated>09/07/2012 3:53:00 PM</LastUpdated>
+        </PropertyPhoto>
+        <PropertyPhoto>
+          <SequenceId>3</SequenceId>
+          <LastUpdated>09/07/2012 3:53:00 PM</LastUpdated>
+        </PropertyPhoto>
+        <PropertyPhoto>
+          <SequenceId>4</SequenceId>
+          <LastUpdated>09/07/2012 3:53:00 PM</LastUpdated>
+        </PropertyPhoto>
+        <PropertyPhoto>
+          <SequenceId>5</SequenceId>
+          <LastUpdated>09/07/2012 3:53:00 PM</LastUpdated>
+        </PropertyPhoto>
+        <PropertyPhoto>
+          <SequenceId>6</SequenceId>
+          <LastUpdated>09/07/2012 3:53:00 PM</LastUpdated>
+        </PropertyPhoto>
+        <PropertyPhoto>
+          <SequenceId>7</SequenceId>
+          <LastUpdated>09/07/2012 3:53:00 PM</LastUpdated>
+        </PropertyPhoto>
+        <PropertyPhoto>
+          <SequenceId>8</SequenceId>
+          <LastUpdated>09/07/2012 3:53:00 PM</LastUpdated>
+        </PropertyPhoto>
+        <PropertyPhoto>
+          <SequenceId>9</SequenceId>
+          <LastUpdated>09/07/2012 3:53:00 PM</LastUpdated>
+        </PropertyPhoto>
+        <PropertyPhoto>
+          <SequenceId>10</SequenceId>
+          <LastUpdated>09/07/2012 3:53:00 PM</LastUpdated>
+        </PropertyPhoto>
+      </Photo>
+      <Price>322000.00</Price>
+      <PropertyType>Vacant Land</PropertyType>
+      <PublicRemarks>This is the general description field in English</PublicRemarks>
+      <TransactionType>For sale or rent</TransactionType>
+      <UtilitiesAvailable />
+      <ViewType>City view</ViewType>
+      <WaterFrontType>Waterfront on ocean</WaterFrontType>
+      <AnalyticsClick>&lt;![CDATA[&lt;script type='text/javascript'&gt;
+ function redirect() { 
+var event = new RlEvent('crealocation');
+event.viewedProperty(11937214,3,[1937465,1937466],[270564,270565],[1937465,1937465],[0,0]);
+event.set('event', 'type', 'click');
+event.record();
+setTimeout("window.location = 'http://www.realtor.ca/PropertyDetails.aspx?PropertyId=11937214'",500);}
+&lt;/script&gt;]]&gt;</AnalyticsClick>
+      <AnalyticsView>&lt;![CDATA[&lt;script src='http://analytics.crea.ca/crearl.js' type='text/javascript'&gt;&lt;/script&gt;
+&lt;script type='text/javascript'&gt;
+var event = new RlEvent('crealocation');
+event.viewedProperty(11937214,3,[1937465,1937466],[270564,270565],[1937465,1937465],[0,0]);
+event.set('event', 'type', 'view');
+event.record();
+&lt;/script&gt;]]&gt;</AnalyticsView>
+      <MoreInformationLink>http://www.realtor.ca/PropertyDetails.aspx?PropertyId=11937214</MoreInformationLink>
+    </PropertyDetails>
+    <PropertyDetails ID="11937215" LastUpdated="Thu, 14 Jun 2012 16:40:01 GMT">
+      <ListingID>DDF106LAND004</ListingID>
+      <AgentDetails ID="1937474">
+        <Name>Elliot Zuckerman</Name>
+        <Office ID="270566">
+          <Name>Rancher's Dream</Name>
+          <Address>
+            <City>Kentville</City>
+          </Address>
+        </Office>
+        <Position>Salesperson</Position>
+      </AgentDetails>
+      <AgentDetails ID="1937476">
+        <Name>Bobby Naismith</Name>
+        <Office ID="270567">
+          <Name>Market Chance Real Estate</Name>
+          <Address>
+            <City>Wolfville</City>
+          </Address>
+        </Office>
+        <Position>Salesperson</Position>
+      </AgentDetails>
+      <Board>106</Board>
+      <Business />
+      <Building>
+        <BathroomTotal>2</BathroomTotal>
+        <BedroomsTotal>3</BedroomsTotal>
+        <CoolingType>Central air conditioning</CoolingType>
+        <FireplacePresent>False</FireplacePresent>
+        <HeatingFuel>Natural gas</HeatingFuel>
+        <HeatingType>Air circulation heat</HeatingType>
+        <SizeInterior>1685 sqft</SizeInterior>
+        <Type>House</Type>
+      </Building>
+      <Land>
+        <SizeTotal>2355 sqft</SizeTotal>
+        <SizeTotalText>2355 sqft</SizeTotalText>
+        <Acreage>true</Acreage>
+      </Land>
+      <Address>
+        <StreetAddress>1102 Ward Road</StreetAddress>
+        <AddressLine1>1102 Ward Road</AddressLine1>
+        <City>Aylesford</City>
+        <Province>Nova Scotia</Province>
+        <PostalCode>B0P1C0</PostalCode>
+        <Country>Canada</Country>
+      </Address>
+      <Features>Acreage, Beach property, Central location</Features>
+      <FarmType>Animal</FarmType>
+      <Lease>300.00</Lease>
+      <LeasePerTime>Monthly</LeasePerTime>
+      <OwnershipType>Leasehold</OwnershipType>
+      <Photo>
+        <PropertyPhoto>
+          <SequenceId>1</SequenceId>
+          <LastUpdated>09/07/2012 3:53:00 PM</LastUpdated>
+        </PropertyPhoto>
+        <PropertyPhoto>
+          <SequenceId>2</SequenceId>
+          <LastUpdated>09/07/2012 3:53:00 PM</LastUpdated>
+        </PropertyPhoto>
+        <PropertyPhoto>
+          <SequenceId>3</SequenceId>
+          <LastUpdated>09/07/2012 3:53:00 PM</LastUpdated>
+        </PropertyPhoto>
+        <PropertyPhoto>
+          <SequenceId>4</SequenceId>
+          <LastUpdated>09/07/2012 3:53:00 PM</LastUpdated>
+        </PropertyPhoto>
+        <PropertyPhoto>
+          <SequenceId>5</SequenceId>
+          <LastUpdated>09/07/2012 3:53:00 PM</LastUpdated>
+        </PropertyPhoto>
+        <PropertyPhoto>
+          <SequenceId>6</SequenceId>
+          <LastUpdated>09/07/2012 3:53:00 PM</LastUpdated>
+        </PropertyPhoto>
+        <PropertyPhoto>
+          <SequenceId>7</SequenceId>
+          <LastUpdated>09/07/2012 3:53:00 PM</LastUpdated>
+        </PropertyPhoto>
+        <PropertyPhoto>
+          <SequenceId>8</SequenceId>
+          <LastUpdated>09/07/2012 3:53:00 PM</LastUpdated>
+        </PropertyPhoto>
+        <PropertyPhoto>
+          <SequenceId>9</SequenceId>
+          <LastUpdated>09/07/2012 3:53:00 PM</LastUpdated>
+        </PropertyPhoto>
+        <PropertyPhoto>
+          <SequenceId>10</SequenceId>
+          <LastUpdated>09/07/2012 3:53:00 PM</LastUpdated>
+        </PropertyPhoto>
+      </Photo>
+      <Price>500000.00</Price>
+      <PropertyType>Vacant Land</PropertyType>
+      <PublicRemarks>This is the general description field in English</PublicRemarks>
+      <TransactionType>For sale or rent</TransactionType>
+      <UtilitiesAvailable />
+      <ViewType>City view</ViewType>
+      <WaterFrontType>Waterfront on river</WaterFrontType>
+      <AnalyticsClick>&lt;![CDATA[&lt;script type='text/javascript'&gt;
+ function redirect() { 
+var event = new RlEvent('crealocation');
+event.viewedProperty(11937215,3,[1937474,1937476],[270566,270567],[1937465,1937465],[0,0]);
+event.set('event', 'type', 'click');
+event.record();
+setTimeout("window.location = 'http://www.realtor.ca/PropertyDetails.aspx?PropertyId=11937215'",500);}
+&lt;/script&gt;]]&gt;</AnalyticsClick>
+      <AnalyticsView>&lt;![CDATA[&lt;script src='http://analytics.crea.ca/crearl.js' type='text/javascript'&gt;&lt;/script&gt;
+&lt;script type='text/javascript'&gt;
+var event = new RlEvent('crealocation');
+event.viewedProperty(11937215,3,[1937474,1937476],[270566,270567],[1937465,1937465],[0,0]);
+event.set('event', 'type', 'view');
+event.record();
+&lt;/script&gt;]]&gt;</AnalyticsView>
+      <MoreInformationLink>http://www.realtor.ca/PropertyDetails.aspx?PropertyId=11937215</MoreInformationLink>
+    </PropertyDetails>
+  </RETS-RESPONSE>
+</RETS>

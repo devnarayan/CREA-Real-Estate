@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CREADBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Agent">
+    <Key>
+      <PropertyRef Name="AgentID" />
+    </Key>
+    <Property Name="AgentID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AgentDetailsID" Type="int" />
+    <Property Name="Name" Type="nvarchar" MaxLength="256" />
+    <Property Name="OfficeID" Type="int" />
+    <Property Name="Position" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Building">
+    <Key>
+      <PropertyRef Name="BuildingID" />
+    </Key>
+    <Property Name="BuildingID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BathroomTotal" Type="int" />
+    <Property Name="BedroomsTotal" Type="int" />
+    <Property Name="CoolingType" Type="nvarchar" MaxLength="50" />
+    <Property Name="FireplacePresent" Type="bit" />
+    <Property Name="HeatingFuel" Type="nvarchar" MaxLength="50" />
+    <Property Name="HeatingType" Type="nvarchar" MaxLength="20" />
+    <Property Name="SizeInterior" Type="nvarchar" MaxLength="50" />
+    <Property Name="Type" Type="nvarchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="Land">
+    <Key>
+      <PropertyRef Name="LandID" />
+    </Key>
+    <Property Name="LandID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SizeTotal" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="SizeTotalText" Type="nvarchar" MaxLength="50" />
+    <Property Name="Acreage" Type="bit" />
+  </EntityType>
+  <EntityType Name="Office">
+    <Key>
+      <PropertyRef Name="OfficeID" />
+    </Key>
+    <Property Name="OfficeID" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="256" />
+    <Property Name="City" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Photo">
+    <Key>
+      <PropertyRef Name="PhotoID" />
+    </Key>
+    <Property Name="PhotoID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PropertyID" Type="int" />
+    <Property Name="SequenceID" Type="int" />
+    <Property Name="LastUpdated" Type="datetime" />
+    <Property Name="Url" Type="nvarchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="Property">
+    <Key>
+      <PropertyRef Name="PropertyID" />
+    </Key>
+    <Property Name="PropertyID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PropertyDetailsID" Type="int" />
+    <Property Name="ListingID" Type="nvarchar" MaxLength="30" />
+    <Property Name="Board" Type="nvarchar" MaxLength="50" />
+    <Property Name="Business" Type="nvarchar" MaxLength="50" />
+    <Property Name="BuildingID" Type="int" />
+    <Property Name="LandID" Type="int" />
+    <Property Name="StreatAddress" Type="nvarchar" MaxLength="256" />
+    <Property Name="AddressLine1" Type="nvarchar" MaxLength="256" />
+    <Property Name="City" Type="nvarchar" MaxLength="50" />
+    <Property Name="Province" Type="nvarchar" MaxLength="50" />
+    <Property Name="PostalCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="Country" Type="nvarchar" MaxLength="50" />
+    <Property Name="Features" Type="nvarchar" MaxLength="400" />
+    <Property Name="FarmType" Type="nvarchar" MaxLength="50" />
+    <Property Name="OwnershipType" Type="nvarchar" MaxLength="30" />
+    <Property Name="Price" Type="money" />
+    <Property Name="PropertyType" Type="nvarchar" MaxLength="50" />
+    <Property Name="PublicRemarks" Type="nvarchar" MaxLength="500" />
+    <Property Name="TransactionType" Type="nvarchar" MaxLength="20" />
+    <Property Name="UtilitiesAvailable" Type="nvarchar" MaxLength="400" />
+    <Property Name="ViewType" Type="nvarchar" MaxLength="20" />
+    <Property Name="WaterFrontType" Type="nvarchar" MaxLength="50" />
+    <Property Name="AnalyticsClick" Type="text" />
+    <Property Name="AnalyticsView" Type="text" />
+    <Property Name="MoreInformationLink" Type="nvarchar" MaxLength="400" />
+    <Property Name="AddDate" Type="datetime" />
+    <Property Name="LastUpdated" Type="datetime" />
+  </EntityType>
+  <EntityType Name="PropertyAgent">
+    <Key>
+      <PropertyRef Name="PropertyAgentID" />
+    </Key>
+    <Property Name="PropertyAgentID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PropertyID" Type="int" Nullable="false" />
+    <Property Name="AgentID" Type="int" />
+  </EntityType>
+  <Association Name="FK_Agent_Office">
+    <End Role="Office" Type="Self.Office" Multiplicity="0..1" />
+    <End Role="Agent" Type="Self.Agent" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Office">
+        <PropertyRef Name="OfficeID" />
+      </Principal>
+      <Dependent Role="Agent">
+        <PropertyRef Name="OfficeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Photo_Property">
+    <End Role="Property" Type="Self.Property" Multiplicity="0..1" />
+    <End Role="Photo" Type="Self.Photo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Property">
+        <PropertyRef Name="PropertyID" />
+      </Principal>
+      <Dependent Role="Photo">
+        <PropertyRef Name="PropertyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Property_Building">
+    <End Role="Building" Type="Self.Building" Multiplicity="0..1" />
+    <End Role="Property" Type="Self.Property" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Building">
+        <PropertyRef Name="BuildingID" />
+      </Principal>
+      <Dependent Role="Property">
+        <PropertyRef Name="BuildingID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Property_Land">
+    <End Role="Land" Type="Self.Land" Multiplicity="0..1" />
+    <End Role="Property" Type="Self.Property" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Land">
+        <PropertyRef Name="LandID" />
+      </Principal>
+      <Dependent Role="Property">
+        <PropertyRef Name="LandID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PropertyAgent_Agent">
+    <End Role="Agent" Type="Self.Agent" Multiplicity="0..1" />
+    <End Role="PropertyAgent" Type="Self.PropertyAgent" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Agent">
+        <PropertyRef Name="AgentID" />
+      </Principal>
+      <Dependent Role="PropertyAgent">
+        <PropertyRef Name="AgentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PropertyAgent_PropertyAgent">
+    <End Role="Property" Type="Self.Property" Multiplicity="1" />
+    <End Role="PropertyAgent" Type="Self.PropertyAgent" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Property">
+        <PropertyRef Name="PropertyID" />
+      </Principal>
+      <Dependent Role="PropertyAgent">
+        <PropertyRef Name="PropertyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="CREADBModelStoreContainer">
+    <EntitySet Name="Agent" EntityType="Self.Agent" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Building" EntityType="Self.Building" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Land" EntityType="Self.Land" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Office" EntityType="Self.Office" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Photo" EntityType="Self.Photo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Property" EntityType="Self.Property" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PropertyAgent" EntityType="Self.PropertyAgent" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Agent_Office" Association="Self.FK_Agent_Office">
+      <End Role="Office" EntitySet="Office" />
+      <End Role="Agent" EntitySet="Agent" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Photo_Property" Association="Self.FK_Photo_Property">
+      <End Role="Property" EntitySet="Property" />
+      <End Role="Photo" EntitySet="Photo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Property_Building" Association="Self.FK_Property_Building">
+      <End Role="Building" EntitySet="Building" />
+      <End Role="Property" EntitySet="Property" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Property_Land" Association="Self.FK_Property_Land">
+      <End Role="Land" EntitySet="Land" />
+      <End Role="Property" EntitySet="Property" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PropertyAgent_Agent" Association="Self.FK_PropertyAgent_Agent">
+      <End Role="Agent" EntitySet="Agent" />
+      <End Role="PropertyAgent" EntitySet="PropertyAgent" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PropertyAgent_PropertyAgent" Association="Self.FK_PropertyAgent_PropertyAgent">
+      <End Role="Property" EntitySet="Property" />
+      <End Role="PropertyAgent" EntitySet="PropertyAgent" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

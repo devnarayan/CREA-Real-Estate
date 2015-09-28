@@ -4,3 +4,9 @@ C:\Users\Dev-pc\Downloads\CREA Data Distribution Code Sample CSharp\bin\Debug\CS
 C:\Users\Dev-pc\Downloads\CREA Data Distribution Code Sample CSharp\obj\x86\Debug\CSharp.csprojResolveAssemblyReference.cache
 C:\Users\Dev-pc\Downloads\CREA Data Distribution Code Sample CSharp\obj\x86\Debug\CSharp.exe
 C:\Users\Dev-pc\Downloads\CREA Data Distribution Code Sample CSharp\obj\x86\Debug\CSharp.pdb
+E:\ComaxCosulting\CREA\CREA-Real-Estate\CREA Data Distribution Code Sample CSharp\bin\Debug\CSharp.exe.config
+E:\ComaxCosulting\CREA\CREA-Real-Estate\CREA Data Distribution Code Sample CSharp\obj\x86\Debug\CSharp.exe
+E:\ComaxCosulting\CREA\CREA-Real-Estate\CREA Data Distribution Code Sample CSharp\obj\x86\Debug\CSharp.pdb
+E:\ComaxCosulting\CREA\CREA-Real-Estate\CREA Data Distribution Code Sample CSharp\bin\Debug\CSharp.exe
+E:\ComaxCosulting\CREA\CREA-Real-Estate\CREA Data Distribution Code Sample CSharp\bin\Debug\CSharp.pdb
+E:\ComaxCosulting\CREA\CREA-Real-Estate\CREA Data Distribution Code Sample CSharp\obj\x86\Debug\CSharp.csprojResolveAssemblyReference.cache

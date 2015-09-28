@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="49e385d825ea46e497dd90d4eb341d20" Name="Diagram1">
+        <EntityTypeShape EntityType="CREADBModel.Agent" Width="1.5" PointX="3" PointY="10.5" />
+        <EntityTypeShape EntityType="CREADBModel.Building" Width="1.5" PointX="0.75" PointY="4.25" />
+        <EntityTypeShape EntityType="CREADBModel.Land" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="CREADBModel.Office" Width="1.5" PointX="0.75" PointY="10.875" />
+        <EntityTypeShape EntityType="CREADBModel.Photo" Width="1.5" PointX="5.25" PointY="7.375" />
+        <EntityTypeShape EntityType="CREADBModel.Property" Width="1.5" PointX="3" PointY="2.125" />
+        <EntityTypeShape EntityType="CREADBModel.PropertyAgent" Width="1.5" PointX="5.25" PointY="3.75" />
+        <AssociationConnector Association="CREADBModel.FK_Agent_Office" />
+        <AssociationConnector Association="CREADBModel.FK_PropertyAgent_Agent" />
+        <AssociationConnector Association="CREADBModel.FK_Property_Building" />
+        <AssociationConnector Association="CREADBModel.FK_Property_Land" />
+        <AssociationConnector Association="CREADBModel.FK_Photo_Property" />
+        <AssociationConnector Association="CREADBModel.FK_PropertyAgent_PropertyAgent" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

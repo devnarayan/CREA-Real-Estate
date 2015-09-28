@@ -4,10 +4,12 @@ using System.Xml;
 using System;
 using System.Configuration;
 using System.Collections.Generic;
+using System.Xml.Serialization;
+using System.Data;
 
 namespace CSharp
 {
-   public class DataFeedExample
+    public class DataFeedExample
     {
         private static HttpWebRequest httpWebRequest;
         private static CredentialCache requestCredentialCache = new CredentialCache();
@@ -57,7 +59,7 @@ namespace CSharp
             Console.WriteLine("================================================================================");
             Console.WriteLine(string.Empty);
 
-            
+
             //STEP 4
             Console.WriteLine("================================================================================");
             Console.WriteLine("STEP 4: GET OBJECT STARTING");
@@ -203,7 +205,8 @@ namespace CSharp
         /// <param name="Culture">Results localization</param>
         /// <param name="Format">Selects the supported data return format for the query response</param>
         /// <remarks>Service End Point - /Search.svc/Search</remarks>
-        public static Dictionary<string,string> SearchTransaction(string SearchType, string Class, string QueryType, string Query, int Count = 1, string Limit = "None", int Offset = 1, string Culture = "en-CA", string Format = "STANDARD-XML")
+        public static  DataTable dt = new DataTable();
+        public static Dictionary<string, string> SearchTransaction(string SearchType, string Class, string QueryType, string Query, int Count = 1, string Limit = "None", int Offset = 1, string Culture = "en-CA", string Format = "COMPACT")
         {
             string requestArguments = "?Format=" + Format + "&SearchType=" + SearchType + "&Class=" + Class + "&QueryType=" + QueryType + "&Query=" + Query + "&Count=" + Count + "&Limit=" + Limit + "&Offset=" + Offset + "&Culture=" + Culture;
             string searchService = RetsUrl + "/Search.svc/Search" + requestArguments;
@@ -219,9 +222,15 @@ namespace CSharp
                     Stream stream = httpResponse.GetResponseStream();
                     // READ THE RESPONSE STREAM USING XMLTEXTREADER
                     XmlTextReader reader = new XmlTextReader(stream);
-
+                    object oj = new object();
+                    //  var ob2= CreateObject(reader,stream, "", oj);
+                    string stt = reader.ReadString();
                     while (reader.Read())
                     {
+                        Console.WriteLine(reader.Name + " Value" + reader.Value);
+                       
+                         dt=ReadXMLElementCompactColumn(reader);
+                         dt=ReadXMLElementCompactData(reader);
                         switch (reader.Name)
                         {
                             case "RETS":
@@ -246,20 +255,21 @@ namespace CSharp
                                 }
                                 break;
                             case "TotalRecords":
-                              dic=  ReadXMLElement(reader);
+                                dic = ReadXMLElement(reader);
                                 break;
                             case "Limit":
-                              dic=  ReadXMLElement(reader);
+                                dic = ReadXMLElement(reader);
                                 break;
                             case "Offset":
-                              dic=  ReadXMLElement(reader);
+                                dic = ReadXMLElement(reader);
                                 break;
                             case "TotalPages":
-                              dic=  ReadXMLElement(reader);
+                                dic = ReadXMLElement(reader);
                                 break;
                             case "RecordsReturned":
-                              dic=  ReadXMLElement(reader);
+                                dic = ReadXMLElement(reader);
                                 break;
+
                         }
                     }
                 }
@@ -268,11 +278,18 @@ namespace CSharp
             catch (Exception ex)
             {
                 return null;
-               // Console.WriteLine(ex);
+                // Console.WriteLine(ex);
             }
         }
-
-        public static Dictionary<string,string> ReadXMLElement(XmlTextReader reader)
+        public static Object CreateObject(XmlReader reader, Stream stream, string XMLString, Object YourClassObject)
+        {
+            XmlSerializer oXmlSerializer = new XmlSerializer(YourClassObject.GetType());
+            //The StringReader will be the stream holder for the existing XML file 
+            YourClassObject = oXmlSerializer.Deserialize(stream);
+            //initially deserialized, the data is represented by an object without a defined type 
+            return YourClassObject;
+        }
+        public static Dictionary<string, string> ReadXMLElement(XmlTextReader reader)
         {
             Dictionary<string, string> dic = new Dictionary<string, string>();
             if (reader.NodeType != XmlNodeType.EndElement)
@@ -292,34 +309,99 @@ namespace CSharp
             }
             return dic;
         }
-        public static void GetObject(string strResource, string strID, string strType){
-       
-          string requestArguments  = "?Resource=" + strResource + "&ID=" + strID + "&Type=" + strType;
-          string searchService  = RetsUrl + "/Object.svc/GetObject" + requestArguments;
+        public static DataTable  ReadXMLElementCompactColumn(XmlTextReader reader)
+        {
+            Dictionary<string, string> dic = new Dictionary<string, string>();
+            if (reader.NodeType != XmlNodeType.EndElement)
+            {
+                if (reader.Name == "COLUMNS")
+                {
+                    string name = reader.Name;
+                    //RETRIEVE THE NEXT NESTED ELEMENT TEXT
+                    while (reader.Read())
+                    {
+                        if (reader.HasValue)
+                        {
+                          string[]  st = reader.Value.Split('\t');
+                            foreach (string str in st)
+                            {
+                                if (str != "")
+                                {
 
-          httpWebRequest = (HttpWebRequest)WebRequest.Create(searchService);
-          httpWebRequest.CookieContainer = cookieJar; //GRAB THE COOKIE
-          httpWebRequest.Credentials = requestCredentials; //PASS CREDENTIALS
+                                    DataColumn col = new DataColumn();
+                                    col.DataType = System.Type.GetType("System.String");
+                                    col.ColumnName = str;
+                                    dt.Columns.Add(col);
+                                }
+                            }
+                            return dt;
+                            // dic.Add(name, reader.Value);
+                            // Console.WriteLine("{0}: {1}", name, reader.Value);
+                            break;
+                        }
+                    }
+                }
+            }
+            return null;
+        }
+        public static DataTable ReadXMLElementCompactData(XmlTextReader reader)
+        {
+            if (reader.NodeType != XmlNodeType.EndElement)
+            {
+                if (reader.Name == "DATA")
+                {
+                    string name = reader.Name;
+                    //RETRIEVE THE NEXT NESTED ELEMENT TEXT
+                    while (reader.Read())
+                    {
+                        if (reader.HasValue)
+                        {
+                            string[] st = reader.Value.Split('\t');
+                            DataRow row = dt.NewRow();
+                            for(int i = 0; i < st.Length; i++)
+                            {
+                                row[i] = st[i];
+                            }
+                            return dt;
+                            // dic.Add(name, reader.Value);
+                            // Console.WriteLine("{0}: {1}", name, reader.Value);
+                            break;
+                        }
+                    }
+                }
 
-          try
-          {
-              using (HttpWebResponse httpResponse = httpWebRequest.GetResponse() as HttpWebResponse)
-              {
+            }
+            return null;
+        }
+        public static void GetObject(string strResource, string strID, string strType)
+        {
 
-                  // READ THE RESPONSE STREAM USING XMLTEXTREADER
-                  if (httpResponse.StatusCode == HttpStatusCode.OK)
-                  {
-                      Stream stream = httpResponse.GetResponseStream(); // READ THE RESPONSE STREAM USING STREAMREADER
-                      StreamReader reader = new StreamReader(stream);
-                      Console.WriteLine("Received photo -> resource:" + strResource + ", type: " + strType);
-                  }
-              }
-          }
-          catch (Exception ex)
-          {
-              Console.WriteLine(ex);
-          }
-    
+            string requestArguments = "?Resource=" + strResource + "&ID=" + strID + "&Type=" + strType;
+            string searchService = RetsUrl + "/Object.svc/GetObject" + requestArguments;
+
+            httpWebRequest = (HttpWebRequest)WebRequest.Create(searchService);
+            httpWebRequest.CookieContainer = cookieJar; //GRAB THE COOKIE
+            httpWebRequest.Credentials = requestCredentials; //PASS CREDENTIALS
+
+            try
+            {
+                using (HttpWebResponse httpResponse = httpWebRequest.GetResponse() as HttpWebResponse)
+                {
+
+                    // READ THE RESPONSE STREAM USING XMLTEXTREADER
+                    if (httpResponse.StatusCode == HttpStatusCode.OK)
+                    {
+                        Stream stream = httpResponse.GetResponseStream(); // READ THE RESPONSE STREAM USING STREAMREADER
+                        StreamReader reader = new StreamReader(stream);
+                        Console.WriteLine("Received photo -> resource:" + strResource + ", type: " + strType);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex);
+            }
+
         }
     }
 }

@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CREADBModelStoreContainer" CdmEntityContainer="CREADBEntities">
+    <EntitySetMapping Name="Agents">
+      <EntityTypeMapping TypeName="CREADBModel.Agent">
+        <MappingFragment StoreEntitySet="Agent">
+          <ScalarProperty Name="Position" ColumnName="Position" />
+          <ScalarProperty Name="OfficeID" ColumnName="OfficeID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="AgentDetailsID" ColumnName="AgentDetailsID" />
+          <ScalarProperty Name="AgentID" ColumnName="AgentID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Buildings">
+      <EntityTypeMapping TypeName="CREADBModel.Building">
+        <MappingFragment StoreEntitySet="Building">
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="SizeInterior" ColumnName="SizeInterior" />
+          <ScalarProperty Name="HeatingType" ColumnName="HeatingType" />
+          <ScalarProperty Name="HeatingFuel" ColumnName="HeatingFuel" />
+          <ScalarProperty Name="FireplacePresent" ColumnName="FireplacePresent" />
+          <ScalarProperty Name="CoolingType" ColumnName="CoolingType" />
+          <ScalarProperty Name="BedroomsTotal" ColumnName="BedroomsTotal" />
+          <ScalarProperty Name="BathroomTotal" ColumnName="BathroomTotal" />
+          <ScalarProperty Name="BuildingID" ColumnName="BuildingID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Lands">
+      <EntityTypeMapping TypeName="CREADBModel.Land">
+        <MappingFragment StoreEntitySet="Land">
+          <ScalarProperty Name="Acreage" ColumnName="Acreage" />
+          <ScalarProperty Name="SizeTotalText" ColumnName="SizeTotalText" />
+          <ScalarProperty Name="SizeTotal" ColumnName="SizeTotal" />
+          <ScalarProperty Name="LandID" ColumnName="LandID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Offices">
+      <EntityTypeMapping TypeName="CREADBModel.Office">
+        <MappingFragment StoreEntitySet="Office">
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="OfficeID" ColumnName="OfficeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Photos">
+      <EntityTypeMapping TypeName="CREADBModel.Photo">
+        <MappingFragment StoreEntitySet="Photo">
+          <ScalarProperty Name="Url" ColumnName="Url" />
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+          <ScalarProperty Name="SequenceID" ColumnName="SequenceID" />
+          <ScalarProperty Name="PropertyID" ColumnName="PropertyID" />
+          <ScalarProperty Name="PhotoID" ColumnName="PhotoID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Properties">
+      <EntityTypeMapping TypeName="CREADBModel.Property">
+        <MappingFragment StoreEntitySet="Property">
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+          <ScalarProperty Name="AddDate" ColumnName="AddDate" />
+          <ScalarProperty Name="MoreInformationLink" ColumnName="MoreInformationLink" />
+          <ScalarProperty Name="AnalyticsView" ColumnName="AnalyticsView" />
+          <ScalarProperty Name="AnalyticsClick" ColumnName="AnalyticsClick" />
+          <ScalarProperty Name="WaterFrontType" ColumnName="WaterFrontType" />
+          <ScalarProperty Name="ViewType" ColumnName="ViewType" />
+          <ScalarProperty Name="UtilitiesAvailable" ColumnName="UtilitiesAvailable" />
+          <ScalarProperty Name="TransactionType" ColumnName="TransactionType" />
+          <ScalarProperty Name="PublicRemarks" ColumnName="PublicRemarks" />
+          <ScalarProperty Name="PropertyType" ColumnName="PropertyType" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="OwnershipType" ColumnName="OwnershipType" />
+          <ScalarProperty Name="FarmType" ColumnName="FarmType" />
+          <ScalarProperty Name="Features" ColumnName="Features" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="PostalCode" ColumnName="PostalCode" />
+          <ScalarProperty Name="Province" ColumnName="Province" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="AddressLine1" ColumnName="AddressLine1" />
+          <ScalarProperty Name="StreatAddress" ColumnName="StreatAddress" />
+          <ScalarProperty Name="LandID" ColumnName="LandID" />
+          <ScalarProperty Name="BuildingID" ColumnName="BuildingID" />
+          <ScalarProperty Name="Business" ColumnName="Business" />
+          <ScalarProperty Name="Board" ColumnName="Board" />
+          <ScalarProperty Name="ListingID" ColumnName="ListingID" />
+          <ScalarProperty Name="PropertyDetailsID" ColumnName="PropertyDetailsID" />
+          <ScalarProperty Name="PropertyID" ColumnName="PropertyID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PropertyAgents">
+      <EntityTypeMapping TypeName="CREADBModel.PropertyAgent">
+        <MappingFragment StoreEntitySet="PropertyAgent">
+          <ScalarProperty Name="AgentID" ColumnName="AgentID" />
+          <ScalarProperty Name="PropertyID" ColumnName="PropertyID" />
+          <ScalarProperty Name="PropertyAgentID" ColumnName="PropertyAgentID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

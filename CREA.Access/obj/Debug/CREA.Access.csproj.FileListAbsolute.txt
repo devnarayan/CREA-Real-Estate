@@ -1,0 +1,14 @@
+E:\ComaxCosulting\CREA\CREA-Real-Estate\CREA.Access\bin\Debug\CREA.Access.dll.config
+E:\ComaxCosulting\CREA\CREA-Real-Estate\CREA.Access\bin\Debug\CREA.Access.dll
+E:\ComaxCosulting\CREA\CREA-Real-Estate\CREA.Access\bin\Debug\CREA.Access.pdb
+E:\ComaxCosulting\CREA\CREA-Real-Estate\CREA.Access\bin\Debug\EntityFramework.dll
+E:\ComaxCosulting\CREA\CREA-Real-Estate\CREA.Access\bin\Debug\EntityFramework.SqlServer.dll
+E:\ComaxCosulting\CREA\CREA-Real-Estate\CREA.Access\bin\Debug\EntityFramework.xml
+E:\ComaxCosulting\CREA\CREA-Real-Estate\CREA.Access\bin\Debug\EntityFramework.SqlServer.xml
+E:\ComaxCosulting\CREA\CREA-Real-Estate\CREA.Access\obj\Debug\CREA.Access.dll
+E:\ComaxCosulting\CREA\CREA-Real-Estate\CREA.Access\obj\Debug\CREA.Access.pdb
+E:\ComaxCosulting\CREA\CREA-Real-Estate\CREA.Access\bin\Debug\AutoMapper.dll
+E:\ComaxCosulting\CREA\CREA-Real-Estate\CREA.Access\bin\Debug\AutoMapper.Net4.dll
+E:\ComaxCosulting\CREA\CREA-Real-Estate\CREA.Access\bin\Debug\AutoMapper.pdb
+E:\ComaxCosulting\CREA\CREA-Real-Estate\CREA.Access\bin\Debug\AutoMapper.xml
+E:\ComaxCosulting\CREA\CREA-Real-Estate\CREA.Access\bin\Debug\AutoMapper.Net4.pdb

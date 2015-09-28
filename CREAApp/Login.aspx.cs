@@ -1,4 +1,4 @@
-﻿using CSharp;
+﻿using CREA.Access;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,12 +13,14 @@ namespace CREAApp
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            Server.MapPath("dfd");
         }
 
         protected void btnLogin_Click(object sender, EventArgs e)
         {
-            DataFeedExample.LoginTransaction();
+            DataFeed df = new DataFeed();
+            df.LoginTransaction();
+            //DataFeedExample.LoginTransaction();
             Response.Redirect("WebPage.aspx");
         }
     }
